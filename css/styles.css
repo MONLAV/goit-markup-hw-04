@@ -35,6 +35,9 @@ body {
 
 .top-line {
     border-bottom: solid 1px var(--color-cornflower);
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header {
@@ -248,7 +251,7 @@ body {
     font-family: var(--primary-font);
     font-size: 36px;
     font-weight: 700;
-    line-height: 1.11;
+    line-height: 1.1;
     letter-spacing: 0.02em;
     text-align: center;
     text-transform: capitalize;
@@ -318,12 +321,11 @@ body {
 }
 
 .icons {
-    width: 16px;
-    height: 16px;
+    fill: var(--color-cloud);
 }
 
 .section-customers {
-    margin-top: 120px;
+    padding: 120px 0;
 }
 
 .customers-list {
@@ -332,9 +334,14 @@ body {
     gap: 24px;
 }
 
-.customers-item-link {
-    width: 168px;
+.customers-item {
+    width: calc((100%-120px)/6);
     height: 88px;
+}
+
+.customers-item-link {
+    width: 100%;
+    height: 100%;
     border: 1px solid var(--color-light-slate);
     border-radius: 4px;
     color: var(--color-light-slate);
@@ -363,6 +370,8 @@ body {
 
 .footer-container {
     display: flex;
+    align-items: baseline;
+    gap: 120px;
 
 }
 
@@ -475,13 +484,17 @@ img {
 
 }
 
-.element-lists {
-    width: calc((100% - 48px) / 3);
+.link-elements {
+    display: block;
 }
 
-.element-lists:hover,
-.element-lists:focus {
+.link-elements:hover,
+.link-elements:focus {
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.element-lists {
+    width: calc((100% - 48px) / 3);
 }
 
 .element {
@@ -492,13 +505,15 @@ img {
 
 .member-team {
     background-color: var(--color-white);
-    border-radius: 0 0 4px 4px;
-    padding: 32px 16px;
+    padding: 32px 0;
 
 }
 
 .card-team {
-    box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
     width: calc((100% - 24px*3) / 4);
 
 }
