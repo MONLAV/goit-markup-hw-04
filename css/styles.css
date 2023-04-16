@@ -189,7 +189,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     background-color: var(--color-corporated);
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/images/hero/people-office.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(./images/hero/people-office.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -296,8 +296,6 @@ body {
 
 }
 
-.socials-item {}
-
 .socials-link,
 .socials-link-footer {
     width: 40px;
@@ -334,8 +332,6 @@ body {
     gap: 24px;
 }
 
-.customers-item {}
-
 .customers-item-link {
     width: 168px;
     height: 88px;
@@ -370,8 +366,6 @@ body {
 
 }
 
-.footer-container-logo {}
-
 .footer-container-social {
     margin-left: 120px;
 
@@ -392,9 +386,6 @@ body {
 .footer-social-media {
     gap: 16px;
 }
-
-.footer-social-media:hover,
-.footer-social-media:focus {}
 
 .text-web-footer {
     display: inline-block;
